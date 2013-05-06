@@ -12,7 +12,7 @@ var c = function() {
 
 function cascadeCall() {
     var index = arguments.length-1,
-        result = arguments[index];
+        result = arguments[index]();
     for (var n = arguments.length-2; n >= 0; n--) {
         result = arguments[n](result);
     }
