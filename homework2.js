@@ -18,6 +18,5 @@ function cascadeCall() {
     }
     return result;
 }
-
 console.log(cascadeCall(a, b, c));
 console.assert(cascadeCall(a, b, c));
