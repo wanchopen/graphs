@@ -20,3 +20,4 @@ function cascadeCall() {
 }
 
 console.log(cascadeCall(a, b, c));
+console.assert(cascadeCall(a, b, c));
