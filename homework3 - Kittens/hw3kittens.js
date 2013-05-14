@@ -14,7 +14,7 @@ var bag = {
         this.kittens[newKitten.name] = newKitten;
     },
     getKitten: function(newKitten) {
-        console.log(this.kittens[newKitten])
+        return this.kittens[newKitten];
     },
     sink: function() {
         for( var kittenName in this.kittens ) {
@@ -27,5 +27,3 @@ var kitten = createKitten('Pushok','Long Live the King!');
 bag.put(kitten);
 bag.getKitten(kitten);
 bag.sink();
-
-
