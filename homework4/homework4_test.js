@@ -1,6 +1,8 @@
-var initialArray = [[3, 4, 5], [1, 5], [6, 8]];
-
-var result = multiplyArray(initialArray);
+var result = multiplyArray([
+    [3, 4, 5],
+    [1, 5],
+    [6, 8]
+]);
 
 console.assert(result.length === 3, 'wrong array result length');
 console.assert(result[0] === 60, 'wrong first item');
