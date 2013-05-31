@@ -1,6 +1,6 @@
-function inherit(parent, child){
+function inherit(Parent, Child){
     var temp = function(){};
-    temp.prototype = parent.prototype;
-    parent = new temp;
+    temp.prototype = Parent.prototype;
+    Child.prototype = new temp;
 
 }

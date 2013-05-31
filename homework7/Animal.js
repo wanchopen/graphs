@@ -1,4 +1,4 @@
-function Animal(){
+function Animal(params){
     this.name = params.name;
 }
 
