@@ -1,7 +1,5 @@
 Function.prototype.bind = function(context, arg){
-    return function(context){
-        context = this;
-    };
+    return this;
 };
 
 var a = function(arg1, arg2){
