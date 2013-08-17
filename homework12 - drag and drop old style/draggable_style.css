@@ -1,0 +1,18 @@
+#body {
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#draggable_square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #FFE4E1;
+}
