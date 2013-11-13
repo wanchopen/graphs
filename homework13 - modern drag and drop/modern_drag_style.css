@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+}
+
+
+#draggable_square1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #ff5d5d;
+}
+
+#draggable_square2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #ff5d90;
+}
+
+.draggable:hover {
+    cursor: move;
+}
