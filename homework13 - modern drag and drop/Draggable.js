@@ -16,8 +16,6 @@ function Draggable(element, dragStart, dragDrop){
         x: 0,
         y: 0
     };
-
-    this._originalSize = this._element.style.width;
 }
 
 Draggable.prototype.move = function(event){
@@ -34,11 +32,20 @@ Draggable.prototype.move = function(event){
     this._originalMouse.x = event.pageX;
     this._originalMouse.y = event.pageY;
 
+    this._element.style.width = "150px";
+    this._element.style.height = "150px";
+
+
+    /**
     var elementStyleWidth = this._element.style.width;
     var elementStyleHeight = this._element.style.height;
 
+
+
     this._originalSize = parseInt(elementStyleWidth * 1.5 + "px");
     this._originalSize = parseInt(elementStyleHeight * 1.5 + "px");
+
+     **/
 
 
 };
@@ -58,4 +65,7 @@ Draggable.prototype.dropMe = function(event){
 
     document.body.removeEventListener('mousemove',this.dragMe);
     document.body.removeEventListener('mouseup',this.dropMe);
+
+    this._element.style.width = "100px";
+    this._element.style.height = "100px";
 };
