@@ -1,4 +1,4 @@
-function Draggable(element, dragStart, dragDrop){
+function Draggable(element){
     this._element = element;
     this.dragMe = this.dragMe.bind(this);
     this.dropMe = this.dropMe.bind(this);
